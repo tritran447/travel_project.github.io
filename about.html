@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+    <link rel="stylesheet" href="./fonts/themify-icons/themify-icons.css">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .text-white {
+            color: #fff !important;
+        }
+
+        html {
+            font-family: Verdana, Geneva, Tahoma, 'Poppins', sans-serif;
+            scroll-behavior: smooth;
+        }
+
+        .row {
+            margin-left: -8px;
+            margin-right: -8px;
+        }
+
+        .col {
+            float: left;
+            padding-left: 8px;
+            padding-right: 8px;
+        }
+
+        .col-half {
+            width: 50%;
+        }
+
+        .col-full {
+            width: 100%;
+            margin-top: 8px;
+            margin-bottom: 16px;
+        }
+
+        .text-center {
+            text-align: center !important;
+        }
+
+        .mt-16 {
+            margin-top: 16px !important;
+        }
+
+        .right-side {
+            text-align: center;
+            flex: 1;
+        }
+
+        .left-side {
+            text-align: left;
+            flex: 1;
+        }
+
+        #header {
+            height: 80px;
+        }
+
+        #header .logo {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 12%;
+            margin-top: 15px;
+            margin-left: 60px;
+        }
+
+        #nav {
+            float: right;
+            margin: 20px 45px 0 0;
+        }
+
+        #nav>li {
+            display: inline-block;
+            margin: 10px 10px;
+            padding: 10px 10px;
+        }
+
+        #nav li a {
+            text-decoration: none;
+            color: #000;
+        }
+
+        #nav li a:hover {
+            color: green;
+            opacity: 0.6;
+        }
+
+        body {
+            position: relative;
+        }
+
+        #main {
+            display: flex;
+            margin: 50px auto;
+            max-width: 90%;
+        }
+
+        .left-side .main-title {
+            font-size: 40px;
+            color: #000;
+            font-weight: bold;
+        }
+
+        .left-side .main-desc {
+            font-size: 20px;
+            letter-spacing: 0.5px;
+            margin-top: 16px;
+            line-height: 1.4;
+        }
+
+        .left-side a {
+            display: inline-block;
+            background: green;
+            padding: 12px 18px 12px 18px;
+            text-decoration: none;
+            border-radius: 25px;
+            color: white;
+            margin-top: 15px;
+            font-size: 17px;
+            font-weight: bold;
+        }
+
+        .left-side a:hover {
+            opacity: 0.8;
+        }
+
+        .right-side img {
+            width: 292px;
+            margin-top: 104px;
+            position: relative;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+        }
+
+        .right-side .box {
+            position: absolute;
+            top: 50%;
+            right: 30px;
+            transform: translateY(-50%);
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        .right-side .box a {
+            color: #000;
+            text-decoration: none;
+            margin-top: 32px;
+            transition: 0.5s;
+        }
+
+        .right-side .box a:hover {
+            opacity: 0.6;
+            transform: translateY(-15px);
+        }
+
+
+        .circle {
+            position: absolute;
+            background-color: green;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            clip-path: circle(600px at right 800px);
+        }
+
+        #footer {
+            margin-top: 16px;
+            position: absolute;
+            display: flex;
+            background-color: green;
+            width: 100%;
+        }
+
+        .content-section {
+            width: 800px;
+            max-width: 100%;
+            padding: 64px 0;
+            margin-left: auto;
+            margin-right: auto;
+            padding-left: 16px;
+            padding-right: 16px;
+        }
+
+        .section-heading {
+            text-align: center;
+            font-size: 30px;
+            font-weight: 500;
+            letter-spacing: 4px;
+            margin-top: 16px;
+        }
+
+        .section-sub-heading {
+            text-align: center;
+            font-size: 15px;
+            font-style: italic;
+            opacity: 0.6;
+            margin-top: 25px;
+        }
+
+        .contact-content {
+            margin-top: 48px;
+        }
+
+        .contact-info {
+            font-size: 18px;
+        }
+
+        .contact-info i::before {
+            width: 30px;
+            display: inline-block;
+        }
+
+        .form-control {
+            padding: 10px;
+            width: 100%;
+            border: 1px solid #ccc;
+        }
+
+        .contact-content input[type="submit"] {
+            padding: 7px 15px;
+            background-color: #000;
+            color: #fff;
+            border: none;
+            float: right;
+            cursor: pointer;
+        }
+
+        .contact-content input[type="submit"]:hover {
+            color: #000;
+            background-color: #ccc;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="circle"></div>
+    <div id="header">
+        <ul id="nav">
+            <li><a href="index.html">Home</a></li>
+        </ul>
+        <img src="./img/Logo_Color_Name.png" alt="" class="logo">
+    </div>
+
+    <div id="main">
+        <div class="left-side">
+            <h1 class="main-title">GDSC<br>
+                The solution, the Community
+            </h1>
+
+            <p class="main-desc">
+                Xin chào mọi người, mình tên là Trần Nguyễn Phùng Trí,
+                mình là khóa K15 thuộc chuyên ngành Software Engineering.<br><br>
+
+                Mình cảm thấy mình là một người khá là lạc quan và thân thiện.
+                Mình bắt đầu biết đến lập trình và theo đuổi khá là trễ, cho đến
+                bây giờ thì mình cũng biết được một chút ít và cũng định hướng được
+                mảng mà mình theo là gì.<br><br>
+
+                Hiện tại thì mình đang theo đuổi về Front-end. Mình hi vọng
+                rằng khi tham gia vào DSC mình sẽ học hỏi được rất nhiều từ các bạn bè
+                và tiền bối đi trước.<br><br>
+
+                Sau những giờ chạy deadline "sml" thì mình thư giãn bằng cách chơi LOL
+                hoặc Valorant, cũng hi vọng sẽ kiếm được "đồng môn" ^^. Ngoài ra, mình cũng
+                thích coffee và nhạc LoFi nữa.<br><br>
+
+                Hi vọng rằng mình sẽ được đồng hành tham gia vào nhiều dự án cộng đồng của
+                DSC, qua đó có thể học hỏi thêm nhiều kiến thức và trau dồi thêm những kĩ năng
+                cho bản thân.<br>
+            </p>
+
+            <a href="#contact">Contact</a>
+        </div>
+
+        <div class="right-side">
+            <img src="./img/me.jpg" alt="My picture">
+            <div class="box">
+                <a href="https://www.facebook.com/profile.php?id=100034471938212"><i class="ti-facebook"></i></a>
+                <a href="https://www.instagram.com/_imtee__/"><i class="ti-instagram"></i></a>
+                <a href="https://twitter.com/"><i class="ti-twitter"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <div id="footer">
+        <!-- Contact -->
+        <div id="contact" class="content-section">
+            <h2 class="section-heading text-white">CONTACT</h2>
+            <p class="section-sub-heading text-white">Send me your message if you want</p>
+
+            <div class="row contact-content">
+                <div class="col col-half contact-info mt-16 s-col-full text-white">
+                    <p><i class="ti-location-pin">HaiChau District, DaNang</i></p>
+                    <p><i class="ti-mobile">Phone: 0783255815</i></p>
+                    <p><i class="ti-email">Email: tritran13092001@mail.com</i></p>
+                </div>
+                <div class="col col-half s-col-full mt-16">
+                    <form action="">
+                        <div class="row">
+                            <div class="col col-half s-col-full">
+                                <input type="text" placeholder="Name" name="" required class="form-control">
+                            </div>
+                            <div class="col col-half s-col-full mt-8">
+                                <input type="email" placeholder="Email" name="" required class="form-control">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col col-full">
+                                <input type="text" placeholder="Message" name="" required class="form-control">
+                            </div>
+                        </div>
+                        <input class="s-col-full" type="submit" value="SEND">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+</body>
+
+</html>
